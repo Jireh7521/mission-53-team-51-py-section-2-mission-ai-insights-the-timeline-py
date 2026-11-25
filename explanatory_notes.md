@@ -12,9 +12,9 @@
 
 >### Milestone 2 (1950): Turing's "Computing Machinery and Intelligence"
 
-**What happened:** Alan Turing proposed the Turing Test, which judges a machine by whether its behaviour is indistinguishable from a human's instead of debating whether it is conscious.
+**What happened:** In his 1950 paper, Alan Turing introduced the "imitation game" as a way to discuss machine intelligence through observable responses. The familiar label "Turing Test" is a later name for this idea; it does not directly measure consciousness.
 
-**Why it matters:** It replaced an unanswerable philosophical question with a practical, testable one, giving the field a measurable goal.
+**Why it matters:** It reframed the question "Can machines think?" as a proposed behavioural comparison, giving researchers a concrete idea to debate and investigate.
 
 **Subfield:** Foundations
 
@@ -22,13 +22,13 @@
 
 >### Milestone 3 (1956): The Dartmouth Summer Research Project
 
-**What happened:** John McCarthy and colleagues gathered at Dartmouth, where McCarthy coined the term "Artificial Intelligence".
+**What happened:** John McCarthy proposed the summer research project in 1955; the workshop took place at Dartmouth in 1956. The proposal used the phrase "artificial intelligence", which McCarthy had chosen for the project.
 
-**Why it matters:** It gave the field a name, a community, and a shared research agenda, which is why 1956 is treated as AI's birth.
+**Why it matters:** The workshop helped establish artificial intelligence as a named research field and brought researchers together around a shared agenda. It is commonly treated as a founding event, not the moment all earlier work began.
 
 **Subfield:** Foundations
 
-**Impact:** The researchers who attended went on to lead the major AI labs for decades, and the label they chose still defines an industry worth hundreds of billions of dollars.
+**Impact:** The meeting helped shape the early research community and vocabulary of the field. Its influence is best understood as intellectual and institutional rather than as a single event that created today's industry.
 
 >### Milestone 4 (1956): The Logic Theorist
 
@@ -42,7 +42,7 @@
 
 >### Milestone 5 (1966): ELIZA
 
-**What happened:** Joseph Weizenbaum built ELIZA, the first chatbot, which used simple pattern matching to mimic a therapist, yet users formed emotional attachments to it.
+**What happened:** Joseph Weizenbaum created ELIZA, one of the earliest well-known conversational computer programs. Its DOCTOR script used pattern matching to imitate a Rogerian psychotherapist, and some users responded as though it understood them.
 
 **Why it matters:** It revealed how readily people attribute understanding to machines that merely sound conversational, which is now called the "ELIZA effect".
 
@@ -52,9 +52,9 @@
 
 >### Milestone 6 (1980s): Expert systems flourish
 
-**What happened:** Companies encoded specialist knowledge as rules, and R1 reportedly saved Digital Equipment Corporation $25 million a year by 1982.
+**What happened:** Companies encoded specialist knowledge as rules. Digital Equipment Corporation used R1, a rule-based system, to configure VAX computer systems; published research documents its practical use, but the often-repeated annual savings figure is omitted here because it needs a directly verifiable source.
 
-**Why it matters:** It was the first time AI delivered clear commercial value, proving it could pay for itself in business.
+**Why it matters:** It became a prominent example of AI being used in a real business workflow, while also illustrating the cost of building and maintaining specialised rule-based systems.
 
 **Subfield:** Symbolic AI
 
@@ -82,7 +82,7 @@
 
 >### Milestone 9 (1997): Deep Blue defeats Garry Kasparov
 
-**What happened:** IBM's Deep Blue beat the reigning world chess champion, evaluating about 200 million positions per second.
+**What happened:** IBM's Deep Blue defeated reigning world chess champion Garry Kasparov in a six-game rematch in 1997. Published accounts describe its specialised chess hardware and search capability; the exact positions-per-second figure is left out because performance varied by position and configuration.
 
 **Why it matters:** It showed that machines could surpass the best humans at a task long seen as the pinnacle of intellect, through brute-force search.
 
@@ -94,7 +94,7 @@
 
 **What happened:** DARPA competitions pushed teams to build autonomous vehicles that crossed real desert terrain and later navigated a mock city.
 
-**Why it matters:** They turned self-driving from a lab idea into a working engineering challenge, with open competition accelerating progress.
+**Why it matters:** They made autonomous driving a public, measurable engineering challenge and encouraged teams to develop robust perception, planning, and vehicle-control systems in difficult environments.
 
 **Subfield:** Robotics / Machine Learning
 
@@ -112,19 +112,19 @@
 
 >### Milestone 12 (2009): Fei-Fei Li introduces ImageNet
 
-**What happened:** Fei-Fei Li publicly introduced ImageNet, a massive dataset of labelled images.
+**What happened:** The ImageNet project, led by Fei-Fei Li and collaborators, introduced a large-scale image database organised according to WordNet concepts; its 2009 paper described the dataset and its construction.
 
 **Why it matters:** It supplied the large-scale data that learning algorithms needed, showing that data could be as important as the algorithm.
 
 **Subfield:** Computer Vision / Data
 
-**Impact:** The annual ImageNet competition became the proving ground for deep learning, and its success helped fuel the boom in image recognition used in phones, medicine, and security.
+**Impact:** The ImageNet Large Scale Visual Recognition Challenge became an influential benchmark for visual recognition. Results in the 2012 competition helped demonstrate the impact of deep convolutional neural networks.
 
 >### Milestone 13 (2011): IBM Watson wins Jeopardy!
 
 **What happened:** Watson defeated champions on the TV quiz show, handling natural-language questions full of wordplay and ambiguity.
 
-**Why it matters:** It demonstrated that a machine could interpret nuanced human language and retrieve answers from huge volumes of text in real time.
+**Why it matters:** It demonstrated a complex question-answering system that combined natural-language processing, information retrieval, and confidence-based answer selection. It was not general human-like understanding.
 
 **Subfield:** Natural Language Processing
 
@@ -132,9 +132,9 @@
 
 >### Milestone 14 (2010s): The deep learning revolution
 
-**What happened:** Large datasets combined with GPU hardware allowed Convolutional Neural Networks (CNNs) to excel at image recognition.
+**What happened:** Progress in deep learning was driven by several factors, including larger datasets, faster GPU computing, improved algorithms, and benchmark competitions. AlexNet's 2012 ImageNet result was a widely recognised turning point for deep convolutional networks.
 
-**Why it matters:** It proved that neural networks, once sidelined, could beat traditional methods when given enough data and computing power.
+**Why it matters:** It showed that deep neural networks could achieve major gains on a demanding image-recognition benchmark when supported by data, compute, and effective training methods.
 
 **Subfield:** Deep Learning
 
@@ -154,7 +154,7 @@
 
 **What happened:** Researchers published "Attention Is All You Need," introducing the Transformer architecture built on an attention mechanism.
 
-**Why it matters:** It let models weigh the most relevant words in a sentence, making them far better at understanding context, and it became the foundation of every major language model that followed.
+**Why it matters:** The architecture uses attention to relate elements of a sequence without relying on recurrence. It improved parallel training for sequence tasks and later became an important basis for many, but not all, modern language models.
 
 **Subfield:** LLMs / Deep Learning
 
@@ -162,9 +162,9 @@
 
 >### Milestone 17 (2022): ChatGPT brings generative AI to the mainstream
 
-**What happened:** ChatGPT's release put a conversational large language model in front of the general public, and rivals like Claude and Gemini soon followed.
+**What happened:** OpenAI released ChatGPT as a research preview in November 2022, making conversational interaction with a large language model widely accessible. Other major conversational AI products emerged later; they were not all released immediately after ChatGPT.
 
-**Why it matters:** It made advanced AI usable by anyone with plain language, with no technical skill required, and it reached huge audiences within weeks.
+**Why it matters:** It lowered the barrier to trying generative AI by allowing people to interact through ordinary language. Its rapid adoption also brought renewed public attention to accuracy, privacy, safety, education, and the social effects of generative systems.
 
 **Subfield:** Generative AI / LLMs
 
@@ -180,3 +180,37 @@
 
 **Impact:** Expectations about AGI already shape research funding, safety work, and government policy, even though no one knows if or when it will arrive.
 
+
+
+---
+
+## Sources and further reading
+
+The links below support the historical descriptions and provide starting points for checking dates, terminology, and technical claims. Where a statement is an interpretation or a broad impact summary, it should be read as context rather than as a directly measured result.
+
+1. **Early ideas and automata:** [The Automata of Hero of Alexandria – Encyclopaedia Britannica](https://www.britannica.com/technology/automaton) (background on historical automata; the Talos story is a myth, not a computer-science invention).
+2. **Turing's 1950 paper:** [A. M. Turing, “Computing Machinery and Intelligence,” *Mind* (1950)](https://doi.org/10.1093/mind/LIX.236.433).
+3. **Dartmouth proposal and workshop:** [The Founding and Future of AI – Dartmouth](https://ai.dartmouth.edu/our-story) and [A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence (1955)](http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html).
+4. **Logic Theorist:** [Newell, Shaw and Simon, “The Logic Theory Machine” (1956)](https://doi.org/10.1037/13169-001).
+5. **ELIZA:** [Joseph Weizenbaum, “ELIZA—A Computer Program for the Study of Natural Language Communication Between Man and Machine” (1966)](https://doi.org/10.1145/365153.365168).
+6. **R1 expert system:** [John McDermott, “R1: A rule-based configurer of computer systems” (1982)](https://doi.org/10.1016/0004-3702(82)90021-2).
+7. **Backpropagation:** [Rumelhart, Hinton and Williams, “Learning representations by back-propagating errors” (1986)](https://doi.org/10.1038/323533a0).
+8. **AI winters:** [The AI winter – Encyclopaedia Britannica](https://www.britannica.com/technology/artificial-intelligence/AI-winter) (overview; the exact dates and causes vary by account).
+9. **Deep Blue:** [IBM, Deep Blue](https://www.ibm.com/history/deep-blue) (IBM's historical account of the 1997 match).
+10. **DARPA challenges:** [DARPA Grand Challenge](https://www.darpa.mil/about-us/timeline/darpa-grand-challenge) (official programme history).
+11. **Netflix Prize:** [Netflix Prize – official Netflix Tech Blog archive](https://netflixtechblog.com/) (search the archive for the Netflix Prize; the original competition ran from 2006 to 2009).
+12. **ImageNet:** [Deng et al., “ImageNet: A large-scale hierarchical image database” (CVPR 2009)](https://doi.org/10.1109/CVPR.2009.5206848).
+13. **IBM Watson:** [IBM, Watson and Jeopardy!](https://www.ibm.com/history/watson-jeopardy) (historical overview of the 2011 competition).
+14. **Deep learning / AlexNet:** [Krizhevsky, Sutskever and Hinton, “ImageNet Classification with Deep Convolutional Neural Networks” (2012)](https://doi.org/10.1145/3065386).
+15. **GANs:** [Goodfellow et al., “Generative Adversarial Nets” (2014)](https://arxiv.org/abs/1406.2661).
+16. **Transformers:** [Vaswani et al., “Attention Is All You Need” (2017)](https://research.google/pubs/attention-is-all-you-need/).
+17. **ChatGPT launch:** [Introducing ChatGPT – OpenAI (30 November 2022)](https://openai.com/index/chatgpt/).
+18. **AGI and superintelligence:** [Stanford Encyclopedia of Philosophy – Artificial Intelligence](https://plato.stanford.edu/entries/artificial-intelligence/) (philosophical background; AGI and superintelligence remain contested concepts, not established milestones).
+
+## Editorial notes
+
+- The Turing Test is described more carefully as the later name commonly given to an idea Turing presented as the “imitation game”.
+- The Dartmouth entry distinguishes the 1955 proposal from the 1956 workshop.
+- The R1 savings figure and Deep Blue's exact positions-per-second figure have been removed because this draft does not include a directly checkable primary source for either number.
+- Broad claims such as “the first time AI delivered commercial value” and “the foundation of every major language model” have been narrowed to avoid overstating the historical record.
+- Milestone 18 is explicitly labelled as a possible future direction, not an event that has already happened.
