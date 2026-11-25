@@ -1,122 +1,47 @@
 const milestones = {
-  turing: {
-    year: "1950", title: "The Turing Test", era: "FOUNDATIONS", field: "Philosophy of AI · Computing",
-    description: "In his paper “Computing Machinery and Intelligence,” British mathematician Alan Turing proposed the imitation game, now widely known as the Turing Test. It asks whether a human evaluator can distinguish a machine's conversational responses from a person's.",
-    impact: "The paper helped turn a broad question—whether machines can think—into a practical discussion about machine behaviour and intelligence."
-  },
-  dartmouth: {
-    year: "1956", title: "The Dartmouth Workshop", era: "FOUNDATIONS", field: "Artificial Intelligence research",
-    description: "A summer research project at Dartmouth College brought together scientists to explore whether aspects of learning and intelligence could be described precisely enough for machines to simulate them. The proposal helped establish the name “artificial intelligence.”",
-    impact: "The workshop is commonly regarded as a founding moment for AI as an organised research field."
-  },
-  "logic-theorist": {
-    year: "1956", title: "Logic Theorist", era: "FOUNDATIONS", field: "Automated reasoning · Symbolic AI",
-    description: "Created by Allen Newell, Herbert A. Simon and programmer Cliff Shaw, Logic Theorist was an early program designed to prove mathematical theorems using symbolic reasoning.",
-    impact: "It demonstrated that computers could manipulate symbols to carry out tasks associated with human reasoning."
-  },
-  eliza: {
-    year: "1966", title: "ELIZA", era: "SYMBOLIC AI & EXPERT SYSTEMS", field: "Natural language processing",
-    description: "Joseph Weizenbaum at MIT created ELIZA, a program that used pattern matching and scripted responses to imitate a conversation. Its DOCTOR script reflected users' statements back as questions.",
-    impact: "ELIZA became an influential early example of conversational software and raised questions about how people interpret computer-generated language."
-  },
-  mycin: {
-    year: "1970s", title: "MYCIN", era: "SYMBOLIC AI & EXPERT SYSTEMS", field: "Expert systems · Medicine",
-    description: "Developed at Stanford in the 1970s, MYCIN was a rule-based expert system designed to help identify certain bacterial infections and recommend antibiotics. It used a knowledge base and an inference engine.",
-    impact: "MYCIN showed how specialist knowledge could be represented as rules, while also highlighting the challenges of deploying expert systems in real clinical settings."
-  },
-  "expert-systems": {
-    year: "1980s", title: "Expert Systems", era: "SYMBOLIC AI & EXPERT SYSTEMS", field: "Knowledge engineering",
-    description: "During the 1980s, rule-based expert systems became a prominent commercial application of AI. They encoded specialist knowledge so a computer could provide recommendations in a narrow domain.",
-    impact: "Their adoption brought AI into business workflows and exposed the cost of building, updating and maintaining large rule collections."
-  },
-  backprop: {
-    year: "1986", title: "Backpropagation gains influence", era: "MACHINE & DEEP LEARNING", field: "Neural networks",
-    description: "The 1986 paper by David Rumelhart, Geoffrey Hinton and Ronald Williams helped popularise backpropagation as a practical way to train multi-layer neural networks by adjusting weights to reduce errors.",
-    impact: "Backpropagation became a central training method for neural networks and helped renew interest in connectionist approaches to learning."
-  },
-  deepblue: {
-    year: "1997", title: "Deep Blue defeats Kasparov", era: "MACHINE & DEEP LEARNING", field: "Search · Game-playing AI",
-    description: "IBM's Deep Blue chess computer defeated reigning world champion Garry Kasparov in a six-game match. The system combined specialised hardware, search and evaluation methods.",
-    impact: "The match demonstrated the strength of computers in a complex, bounded game, while showing that success did not require human-like general intelligence."
-  },
-  imagenet: {
-    year: "2009", title: "ImageNet", era: "MACHINE & DEEP LEARNING", field: "Computer vision · Data",
-    description: "ImageNet, introduced by researchers led by Fei-Fei Li, provided a large, organised image database with labelled categories. It helped create a shared benchmark for visual recognition research.",
-    impact: "Large labelled datasets and common benchmarks made it easier to measure progress and helped accelerate the deep-learning advances that followed."
-  },
-  alexnet: {
-    year: "2012", title: "AlexNet", era: "MACHINE & DEEP LEARNING", field: "Deep learning · Computer vision",
-    description: "AlexNet, developed by Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton, achieved a landmark result in the 2012 ImageNet image-recognition competition using a deep convolutional neural network and GPU training.",
-    impact: "Its performance helped spark widespread interest and investment in deep learning for computer vision and other applications."
-  },
-  gans: {
-    year: "2014", title: "Generative Adversarial Networks", era: "GENERATIVE AI & LLMS", field: "Generative machine learning",
-    description: "Ian Goodfellow and colleagues introduced Generative Adversarial Networks (GANs), in which a generator and a discriminator are trained in competition. The generator learns to create data that resembles examples in the training set.",
-    impact: "GANs became an influential approach to generative modelling and inspired research into synthetic images, video and other forms of generated data."
-  },
-  transformer: {
-    year: "2017", title: "The Transformer Architecture", era: "GENERATIVE AI & LLMS", field: "Deep learning · Language models",
-    description: "The research paper “Attention Is All You Need” introduced the Transformer, an architecture based on attention mechanisms rather than recurrence as its core sequence-processing approach.",
-    impact: "Transformers made it practical to train powerful models in parallel and became the foundation for many later language models and generative AI systems."
-  },
-  gpt3: {
-    year: "2020", title: "GPT-3", era: "GENERATIVE AI & LLMS", field: "Large language models",
-    description: "OpenAI introduced GPT-3, a large autoregressive language model trained on a broad mixture of text. It demonstrated strong few-shot performance when given examples in a prompt.",
-    impact: "GPT-3 helped popularise the idea that a single large language model could perform many text tasks from natural-language instructions and examples."
-  },
-  chatgpt: {
-    year: "2022", title: "ChatGPT", era: "GENERATIVE AI & LLMS", field: "Conversational AI · Large language models",
-    description: "OpenAI released ChatGPT as a conversational AI product in November 2022. It was fine-tuned for dialogue using methods that included human feedback.",
-    impact: "Its accessible chat interface brought generative AI into everyday public use and accelerated discussion about the opportunities and risks of AI systems."
-  },
-  agi: {
-    year: "FUTURE", title: "Artificial General Intelligence?", era: "FUTURE HORIZON", field: "Open research question",
-    description: "Artificial General Intelligence (AGI) is a term used for a hypothetical AI system able to learn and perform a broad range of intellectual tasks across different domains. There is no universally accepted definition or agreed test for AGI.",
-    impact: "AGI is a debated future possibility, not an established milestone or a capability that should be assumed to exist. Research continues on capability evaluation, alignment and governance."
-  },
-  "responsible-ai": {
-    year: "ONGOING", title: "Responsible AI", era: "FUTURE HORIZON", field: "AI safety · Governance · Ethics",
-    description: "Responsible AI brings together work on safety, fairness, privacy, transparency, accountability, security and human oversight across the AI lifecycle.",
-    impact: "These concerns are not only future issues: they already shape how AI systems should be designed, evaluated, deployed and governed."
-  }
+  roots:{year:"BEFORE 1950",title:"Philosophical Roots",era:"FOUNDATIONS",field:"Philosophy · Automata",description:"Myths such as Talos and early mechanical automata imagined artificial beings long before electronic computers. These were cultural and mechanical precursors, not modern AI systems.",impact:"They raised enduring questions about thinking and artificial creation that later shaped AI research and debate."},
+  turing:{year:"1950",title:"Turing's Imitation Game",era:"FOUNDATIONS",field:"Philosophy of AI · Computing",description:"In Computing Machinery and Intelligence, Alan Turing proposed the imitation game to discuss machine intelligence through observable responses. Turing Test is the familiar later name; it does not directly measure consciousness.",impact:"It reframed Can machines think? as a behavioural question researchers could debate and investigate."},
+  dartmouth:{year:"1955–1956",title:"The Dartmouth Project",era:"FOUNDATIONS",field:"AI research",description:"John McCarthy proposed the summer research project in 1955; the workshop took place at Dartmouth in 1956. The proposal used the phrase artificial intelligence.",impact:"The workshop helped establish AI as a named research field, but was not the beginning of all earlier work on intelligent machines."},
+  "logic-theorist":{year:"1956",title:"The Logic Theorist",era:"FOUNDATIONS",field:"Automated reasoning · Symbolic AI",description:"Created by Allen Newell, Herbert A. Simon and programmer Cliff Shaw, Logic Theorist was an early program designed to prove mathematical theorems using symbolic reasoning.",impact:"It showed that computers could manipulate symbols to perform tasks associated with human reasoning."},
+  eliza:{year:"1966",title:"ELIZA",era:"SYMBOLIC AI & EXPERT SYSTEMS",field:"Natural language processing",description:"Joseph Weizenbaum created ELIZA, an early conversational program. Its DOCTOR script used pattern matching to imitate a Rogerian psychotherapist.",impact:"ELIZA revealed how readily people attribute understanding to conversational machines, a lesson relevant to trust in today's chatbots."},
+  "expert-systems":{year:"1980s",title:"Expert Systems and R1",era:"SYMBOLIC AI & EXPERT SYSTEMS",field:"Knowledge engineering · Business AI",description:"Expert systems encoded specialist knowledge as rules. Digital Equipment Corporation used R1, developed by John McDermott, to help configure VAX computer systems.",impact:"R1 demonstrated a practical business use for rule-based AI while highlighting the effort needed to maintain specialised knowledge bases."},
+  "ai-winters":{year:"1980s–1990s",title:"The AI Winters",era:"SYMBOLIC AI & EXPERT SYSTEMS",field:"AI research history",description:"Funding and enthusiasm declined when systems failed to meet inflated expectations and some expert systems proved expensive or brittle. Exact dates and causes vary by account.",impact:"These periods showed the risks of hype outrunning capability; research continued in machine learning and statistics."},
+  backprop:{year:"1986",title:"Backpropagation",era:"MACHINE & DEEP LEARNING",field:"Neural networks",description:"The 1986 work by David Rumelhart, Geoffrey Hinton and Ronald Williams helped popularise backpropagation as a practical method for training multi-layer neural networks.",impact:"Backpropagation became a central training method and helped renew interest in learning from examples."},
+  deepblue:{year:"1997",title:"Deep Blue Defeats Kasparov",era:"MACHINE & DEEP LEARNING",field:"Game AI · Search",description:"IBM's Deep Blue defeated reigning world chess champion Garry Kasparov in a six-game rematch, using specialised hardware, search and evaluation methods.",impact:"The match showed how powerful computation could solve a complex, bounded task without requiring human-like general intelligence."},
+  darpa:{year:"2004–2007",title:"DARPA Grand and Urban Challenges",era:"MACHINE & DEEP LEARNING",field:"Robotics · Autonomous systems",description:"DARPA competitions challenged teams to build autonomous vehicles that navigated demanding desert routes and a mock urban environment.",impact:"They advanced research in vehicle perception, planning and control, making autonomous driving a measurable engineering challenge."},
+  "netflix-prize":{year:"2006–2009",title:"The Netflix Prize",era:"MACHINE & DEEP LEARNING",field:"Machine learning · Recommendation systems",description:"Netflix offered a prize for improving movie recommendation predictions, attracting teams exploring collaborative filtering and ensemble methods.",impact:"It demonstrated how shared datasets and open competitions could accelerate applied machine-learning research."},
+  imagenet:{year:"2009",title:"ImageNet",era:"MACHINE & DEEP LEARNING",field:"Computer vision · Data",description:"Led by Fei-Fei Li and collaborators, ImageNet introduced a large image database organised around WordNet concepts and labelled categories.",impact:"ImageNet and its visual-recognition challenge provided a shared benchmark; 2012 results helped demonstrate deep convolutional networks."},
+  watson:{year:"2011",title:"IBM Watson Wins Jeopardy!",era:"MACHINE & DEEP LEARNING",field:"Natural language processing · Question answering",description:"IBM Watson defeated champions on Jeopardy!, combining natural-language processing, information retrieval and confidence-based answer selection.",impact:"It demonstrated a complex question-answering system, but not general human-like understanding."},
+  "deep-learning":{year:"2010s",title:"The Deep Learning Revolution",era:"MACHINE & DEEP LEARNING",field:"Deep learning · Neural networks",description:"Deep learning advanced through larger datasets, faster GPU computing, improved algorithms and benchmark competitions. AlexNet's 2012 ImageNet result was a widely recognised turning point.",impact:"Deep neural networks drove major advances in image and speech recognition and became a dominant approach across many AI applications."},
+  gans:{year:"2014",title:"Generative Adversarial Networks",era:"GENERATIVE AI & LLMS",field:"Generative machine learning",description:"Ian Goodfellow and colleagues introduced GANs, in which a generator creates candidate data and a discriminator learns to distinguish generated examples from real ones.",impact:"GANs became an influential generative-modelling approach and raised concerns about realistic fabricated media."},
+  transformer:{year:"2017",title:"The Transformer Architecture",era:"GENERATIVE AI & LLMS",field:"Deep learning · Language models",description:"Attention Is All You Need introduced the Transformer, which uses attention to relate sequence elements without relying on recurrence as its core mechanism.",impact:"Transformers enabled more parallel training and became an important basis for many, but not all, modern language models."},
+  chatgpt:{year:"2022",title:"ChatGPT",era:"GENERATIVE AI & LLMS",field:"Conversational AI · Large language models",description:"OpenAI released ChatGPT as a research preview in November 2022, making conversational interaction with a large language model widely accessible.",impact:"Its accessible interface brought generative AI into mainstream discussion and renewed attention to accuracy, privacy, safety and social effects."},
+  agi:{year:"FUTURE",title:"AGI and Superintelligence?",era:"FUTURE HORIZON",field:"Open research questions",description:"AGI and superintelligence describe hypothetical levels of AI capability. Their definitions and possible tests are contested, and neither is an achieved milestone.",impact:"Questions about their possible development shape research, safety work and policy, but their arrival and timing remain uncertain."}
 };
-
-const buttons = document.querySelectorAll(".milestone");
-const placeholder = document.querySelector("#panel-placeholder");
-const detail = document.querySelector("#event-detail");
-const fields = {
-  era: document.querySelector("#event-era"),
-  year: document.querySelector("#event-year"),
-  title: document.querySelector("#event-title"),
-  description: document.querySelector("#event-description"),
-  impact: document.querySelector("#event-impact"),
-  field: document.querySelector("#event-field")
-};
-
-function showMilestone(id, button) {
-  const event = milestones[id];
-  if (!event) return;
-
-  fields.era.textContent = event.era;
-  fields.year.textContent = event.year;
-  fields.title.textContent = event.title;
-  fields.description.textContent = event.description;
-  fields.impact.textContent = event.impact;
-  fields.field.textContent = event.field;
-
-  placeholder.hidden = true;
-  detail.hidden = false;
-  buttons.forEach((item) => {
-    const selected = item === button;
-    item.classList.toggle("is-selected", selected);
-    item.setAttribute("aria-pressed", String(selected));
+const buttons=document.querySelectorAll(".milestone");
+const placeholder=document.querySelector("#panel-placeholder");
+const detail=document.querySelector("#event-detail");
+const fields={era:document.querySelector("#event-era"),year:document.querySelector("#event-year"),title:document.querySelector("#event-title"),description:document.querySelector("#event-description"),impact:document.querySelector("#event-impact"),field:document.querySelector("#event-field")};
+function showMilestone(id,button){
+  const event=milestones[id];
+  if(!event)return;
+  fields.era.textContent=event.era;
+  fields.year.textContent=event.year;
+  fields.title.textContent=event.title;
+  fields.description.textContent=event.description;
+  fields.impact.textContent=event.impact;
+  fields.field.textContent=event.field;
+  placeholder.hidden=true;
+  detail.hidden=false;
+  buttons.forEach(item=>{
+    const selected=item===button;
+    item.classList.toggle("is-selected",selected);
+    item.setAttribute("aria-pressed",String(selected));
   });
 }
-
-buttons.forEach((button) => {
-  button.setAttribute("aria-pressed", "false");
-  button.addEventListener("click", () => showMilestone(button.dataset.event, button));
+buttons.forEach(button=>{
+  button.setAttribute("aria-pressed","false");
+  button.addEventListener("click",()=>showMilestone(button.dataset.event,button));
 });
-
-const firstMilestone = document.querySelector('[data-event="turing"]');
-if (firstMilestone) showMilestone("turing", firstMilestone);
+const firstMilestone=document.querySelector('[data-event="roots"]');
+if(firstMilestone)showMilestone("roots",firstMilestone);
