@@ -198,7 +198,7 @@ The links below support the historical descriptions and provide starting points 
 8. **AI winters:** [The AI winter – Encyclopaedia Britannica](https://www.britannica.com/technology/artificial-intelligence/AI-winter) (overview; the exact dates and causes vary by account).
 9. **Deep Blue:** [IBM, Deep Blue](https://www.ibm.com/history/deep-blue) (IBM's historical account of the 1997 match).
 10. **DARPA challenges:** [DARPA Grand Challenge](https://www.darpa.mil/about-us/timeline/darpa-grand-challenge) (official programme history).
-11. **Netflix Prize:** [Netflix Prize – official Netflix Tech Blog archive](https://netflixtechblog.com/) (search the archive for the Netflix Prize; the original competition ran from 2006 to 2009).
+11. **Netflix Prize:** [Bell and Koren, “Lessons from the Netflix Prize Challenge”](https://doi.org/10.1109/MIS.2007.109) (technical discussion of the competition and recommendation methods).
 12. **ImageNet:** [Deng et al., “ImageNet: A large-scale hierarchical image database” (CVPR 2009)](https://doi.org/10.1109/CVPR.2009.5206848).
 13. **IBM Watson:** [IBM, Watson and Jeopardy!](https://www.ibm.com/history/watson-jeopardy) (historical overview of the 2011 competition).
 14. **Deep learning / AlexNet:** [Krizhevsky, Sutskever and Hinton, “ImageNet Classification with Deep Convolutional Neural Networks” (2012)](https://doi.org/10.1145/3065386).
