@@ -6,7 +6,8 @@ An interactive, responsive learning resource covering **18 milestones** in the h
 
 - **Interactive pyramid:** 18 selectable milestone buttons.
 - **Milestone panel:** each selection displays its period, explanation, significance and AI field.
-- **Historical notes:** [explanatory_notes.md](explanatory_notes.md) contains the matching 18 entries, source links and editorial notes.
+- **Styled notes page:** [milestone-notes.html](milestone-notes.html) presents all 18 explanations, source links and editorial notes in the website design.
+- **Markdown source:** [explanatory_notes.md](explanatory_notes.md) remains the editable source for the historical notes and references.
 - **Responsive layout:** desktop and mobile CSS breakpoints, plus reduced-motion support.
 - **Accessible controls:** milestone selectors are native HTML buttons and support keyboard activation.
 
@@ -43,6 +44,7 @@ Then visit [http://localhost:8000](http://localhost:8000).
 .
 ├── index.html
 ├── explanatory_notes.md
+├── milestone-notes.html
 ├── css/
 │   └── style.css
 └── js/
