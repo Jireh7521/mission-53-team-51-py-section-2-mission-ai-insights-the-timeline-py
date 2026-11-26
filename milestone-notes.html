@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Read the 18 explanatory notes and historical sources behind the AI Timeline Pyramid.">
+  <meta name="theme-color" content="#070b18">
+  <title>Milestone Notes &amp; Sources — AI Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .notes-hero { max-width: 980px; margin: auto; padding: 76px 28px 42px; }
+    .notes-hero h1 { font-size: clamp(38px, 6vw, 66px); }
+    .notes-hero h1 span { color: var(--cyan); -webkit-text-stroke: 0; }
+    .notes-intro { max-width: 700px; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .notes-actions { display:flex; align-items:center; gap:18px; margin-top:24px; flex-wrap:wrap; }
+    .back-link { color:var(--cyan); text-decoration:none; font:10px "DM Mono",monospace; letter-spacing:.1em; }
+    .notes-count { color:#8997b5; font:9px "DM Mono",monospace; letter-spacing:.13em; }
+    .notes-layout { max-width: 980px; margin: 0 auto; padding: 0 28px 100px; }
+    .notes-content { display:grid; gap:14px; }
+    .milestone-card, .sources-card, .editorial-card { border:1px solid var(--line); border-radius:14px; background:rgba(13,20,40,.78); padding:25px clamp(18px,3vw,32px); box-shadow:0 16px 45px rgba(0,0,0,.12); }
+    .milestone-card blockquote { margin:0 0 18px; padding:0 0 13px; border:0; border-bottom:1px solid var(--line); }
+    .milestone-card blockquote h3 { margin:0; color:var(--cyan); font-size:clamp(17px,2.5vw,22px); line-height:1.35; letter-spacing:-.035em; }
+    .milestone-card p, .sources-card p, .editorial-card p { color:#b7c1d8; font-size:12px; line-height:1.9; margin:12px 0; }
+    .milestone-card p strong { color:#edf2ff; font-weight:700; }
+    .notes-content h2 { margin:30px 0 4px; color:var(--text); font-size:clamp(24px,4vw,34px); letter-spacing:-.045em; }
+    .sources-card ol { padding-left:22px; margin:18px 0 0; }
+    .sources-card li, .editorial-card li { color:#b7c1d8; font-size:12px; line-height:1.9; padding:5px 0 5px 5px; }
+    .sources-card li::marker, .editorial-card li::marker { color:var(--cyan); }
+    .notes-content a { color:#75d9f4; text-decoration-thickness:1px; text-underline-offset:3px; overflow-wrap:anywhere; }
+    .notes-content a:hover { color:#fff; }
+    .editorial-card ul { padding-left:22px; }
+    .notes-loading { padding:28px; border:1px solid var(--line); border-radius:12px; color:var(--muted); background:var(--panel); font-size:13px; }
+    @media(max-width:560px) {
+      .notes-hero { padding:58px 20px 30px; }
+      .notes-layout { padding:0 14px 70px; }
+      .milestone-card, .sources-card, .editorial-card { padding:20px 17px; }
+      .milestone-card p, .sources-card li, .editorial-card li { font-size:12px; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js" defer></script>
+  <script src="js/notes.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AI Timeline Pyramid home"><span class="brand-mark" aria-hidden="true">▲</span><span>AI<span class="brand-muted">/</span>INSIGHTS</span></a>
+    <a class="header-link" href="index.html">BACK TO PYRAMID <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="notes-hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span> THE RESEARCH BEHIND THE PYRAMID</p>
+      <h1>MILESTONE <span>NOTES</span><br>&amp; SOURCES</h1>
+      <p class="notes-intro">Explore the explanations behind all 18 milestones, followed by the sources used to check dates, terminology and historical claims. The notes preserve important qualifications and distinguish established events from open future questions.</p>
+      <div class="notes-actions">
+        <a class="back-link" href="index.html">← RETURN TO THE INTERACTIVE PYRAMID</a>
+        <span class="notes-count">18 MILESTONES · REFERENCES · EDITORIAL NOTES</span>
+      </div>
+    </section>
+    <section class="notes-layout" aria-label="Explanatory milestone notes and sources">
+      <div id="notes-content" class="notes-content" aria-live="polite">
+        <p class="notes-loading">Loading the milestone notes and references…</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">▲</span><span>AI<span class="brand-muted">/</span>INSIGHTS</span></a>
+    <p>A learning journey through the evolution of artificial intelligence.</p>
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+</body>
+</html>
