@@ -27,16 +27,17 @@ The layers are a learning aid, not a claim that AI developed in a simple straigh
 
 No build tools, package manager or backend are required.
 
-1. Clone the repository.
-2. Open `index.html` in a modern browser.
-
-Alternatively, start a local server from the project directory:
+1. Clone the repository and open a terminal in the project directory.
+2. Start a local server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000).
+3. Open [http://localhost:8000](http://localhost:8000) for the interactive pyramid.
+4. Open [http://localhost:8000/milestone-notes.html](http://localhost:8000/milestone-notes.html) for the full notes and references.
+
+Keep the terminal running while you use the site. The notes page fetches `explanatory_notes.md`, so opening the HTML file directly with a `file://` URL is not the supported way to run it. If port `8000` is already in use, choose another port, such as `python3 -m http.server 8001`, and use that port in the browser.
 
 ## Project structure
 
@@ -53,7 +54,7 @@ Then visit [http://localhost:8000](http://localhost:8000).
 
 ## Interaction
 
-Select a milestone button in the pyramid. The information panel displays its date or period, description, significance and field. The first milestone is selected automatically when the page loads.
+Select a milestone button in the pyramid. The information panel displays its date or period, description, significance and field. The first milestone is selected automatically when the page loads. On the notes page, `js/notes.js` fetches `explanatory_notes.md` and builds the note cards in the browser. It uses built-in DOM APIs, so no Markdown-rendering CDN or package installation is required. If loading fails, the page displays an error and a retry button.
 
 ## Historical accuracy
 
@@ -65,9 +66,10 @@ Historical summaries are concise educational descriptions. Consult the linked so
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
-- Google Fonts (Manrope and DM Mono)
+- Vanilla JavaScript (no framework or build step)
+- Browser-native DOM APIs for rendering the notes
+- Google Fonts (Manrope and DM Mono; used for typography)
 
 ## Current status
 
-Content reconciliation update: the pyramid and explanatory notes each contain 18 matching milestone topics. Desktop/mobile visual verification and interactive browser testing are the next validation steps.
+Content reconciliation: the pyramid and explanatory notes each contain 18 matching milestone topics. The notes page uses a local JavaScript renderer and does not depend on external Markdown libraries. Verify the pages in desktop and mobile browsers before release.
